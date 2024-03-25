@@ -1,333 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>AK Abidkk</title>
+    <style>
+
+
+#headline {
+  animation: slidein 20s ease-in infinite alternate;
+  /* Animation property set to transform (position) */
+}
+
+@keyframes slidein {
+  from { /* Using 'from' instead of 0% */
+    transform: translateX(100%);
+  }
+  to { /* Using 'to' instead of 100% */
+    transform: translateX(-100%);
+  }
+}
+
+    </style>
 </head>
+
 <body class="bg-gray-100">
     <main>
 
         <div>
-            <img src="./images/hero-bg.png" alt="background" class="w-screen absolute h-[930px] sm:h-[700px] md:h-[900px] lg:h-[700px]">
+            <img src="./images/hero-bg.png" alt="background"
+                class="w-screen absolute h-[930px] sm:h-[700px] md:h-[900px] lg:h-[700px]">
 
-            <div class="relative"  >
+            <div class="relative">
                 <!-- header -->
-                <header id="header" class="bg-[#000066] text-gray-200 p-2 flex flex-wrap gap-2  justify-between md:px-10 border-b border-blue-700 shadow-md">
-                  
-                    
+                <header id="header"
+                    class="bg-[#000066] text-gray-200 p-2 flex flex-wrap gap-2  justify-between md:px-10 border-b border-blue-700 shadow-md">
+
+
                     <h1 class="text-2xl font-bold font-mono">Abidkk</h1>
                     <ul class="flex flex-wrap gap-5 text-lg">
-                       <a href="/" class="hover:text-cyan-300 duration-500"> <li>Home</li></a>
-                        <a href="#about" class="hover:text-cyan-300 duration-500"><li>About</li></a>
-                        <a href="#skills" class="hover:text-cyan-300 duration-500"><li>Skills</li></a>
-                        <a href="#courses" class="hover:text-cyan-300 duration-500"><li>Courses</li></a>
-                        <a href="#projects" class="hover:text-cyan-300 duration-500"> <li>Projects</li></a>
+                        <a href="/" class="hover:text-cyan-300 duration-500">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about" class="hover:text-cyan-300 duration-500">
+                            <li>About</li>
+                        </a>
+                        <a href="#skills" class="hover:text-cyan-300 duration-500">
+                            <li>Skills</li>
+                        </a>
+                        <a href="#courses" class="hover:text-cyan-300 duration-500">
+                            <li>Courses</li>
+                        </a>
+                        <a href="#projects" class="hover:text-cyan-300 duration-500">
+                            <li>Projects</li>
+                        </a>
                     </ul>
                     <div class="flex gap-2">
-                        <p class="hover:scale-105 duration-500"><a href="https://www.linkedin.com/in/abidkk/" target="_blank"><img src="./images/linkedin01.png" alt="linkedin" class="w-8 h-8 bg-white rounded-full border border-white" ></a></p>
-                        <p class="hover:scale-105 duration-500"><a href="https://github.com/abidkk" target="_blank"><img src="./images/github01.png" alt="github" class="w-8 h-8 bg-white rounded-full border border-white"></a></p>
+                        <p class="hover:scale-105 duration-500"><a href="https://www.linkedin.com/in/abidkk/"
+                                target="_blank"><img src="./images/linkedin01.png" alt="linkedin"
+                                    class="w-8 h-8 bg-white rounded-full border border-white"></a></p>
+                        <p class="hover:scale-105 duration-500"><a href="https://github.com/abidkk" target="_blank"><img
+                                    src="./images/github01.png" alt="github"
+                                    class="w-8 h-8 bg-white rounded-full border border-white"></a></p>
                     </div>
                 </header>
 
                 <!-- hero -->
-                <p class="text-white px-4 md:px-10 pt-2">For latest updates: <a href="" class="text-red-300">click here</a></p>
-                    <div class=" grid grid-cols-1 lg:grid-cols-2  text-white p-4 md:px-10">
-                    
-                        <!-- content -->    
-                        <div class=" h-[250px] md:h-[300px] lg:h-[600px] order-2 lg:order-1 flex items-center lg:pb-40">   
-                      
-                            <div class=" ">
-                            
+        <!-- <div>
+            <p class="pt-5">
+               <span class=" mx-10 p-2 border border-cyan-300 text-cyan-400"> click Here for Javascript Bootcamp Registration</span>
+            </p>
+        </div> -->
+
+        <div class="text-white  p-2" id="headline">
+            <span  class="underline hover:text-cyan-500 duration-500"><a href="./pages/courses/onsite/index.html">Javascript Bootcamp Registration</a></span>
+
+        </div>
+                <div class=" grid grid-cols-1 lg:grid-cols-2  text-white p-4 md:px-10">
+
+                    <!-- content -->
+                    <div class=" h-[250px] md:h-[300px] lg:h-[600px] order-2 lg:order-1 flex items-center lg:pb-40">
+
+                        <div class=" ">
+
                             <h1 class="text-4xl md:text-6xl font-bold">Abid Khokhar</h1>
                             <h2 class="text-2xl md:text-6xl lg:text-5xl text-cyan-400">Frontend Web Developer</h2>
-                            <p class="py-2 text-sm md:text-xl"> Javascript | Typescript | Python with Numpy & Pandas| React | Next | Artificial Intelligence Chatbot Developer.</p>
-                            <button class="mt-5 bg-blue-900 px-6 py-2 text-white hover:rounded-tl-xl hover:rounded-br-xl duration-500">contact me</button>
-                        </div>
-                        </div>
-                       <!-- main logo -->
-                        <div class=" h-[300px] md:h-[400px] lg:h-[600px] order-1 lg:order-2">
-                            <div class="flex justify-center items-center ">
-                                <img src="./images/development-4536630_1920.png" alt="globe logo" class="  rounded-md p-4 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]">
-                            </div>
+                            <p class="py-2 text-sm md:text-xl"> Javascript | Typescript | Python with Numpy & Pandas|
+                                React | Next | Artificial Intelligence Chatbot Developer.</p>
+                            <button
+                                class="mt-5 bg-blue-900 px-6 py-2 text-white hover:rounded-tl-xl hover:rounded-br-xl duration-500">contact
+                                me</button>
                         </div>
                     </div>
-
+                    <!-- main logo -->
+                    <div class=" h-[300px] md:h-[400px] lg:h-[600px] order-1 lg:order-2">
+                        <div class="flex justify-center items-center ">
+                            <img src="./images/development-4536630_1920.png" alt="globe logo"
+                                class="  rounded-md p-4 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]">
+                        </div>
+                    </div>
                 </div>
-                
+
+            </div>
+
+            <!-- About Section -->
+            <div class=" mt-56 md:mt-40 lg:mt-32 p-2 py-10 my-10 md:px-20 min-h-80 " id="about">
+                <h1 class="text-center text-2xl md:text-4xl font-bold pb-5"> <span>About</span> <span
+                        class="text-blue-800">Me</span></h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 justify-between py-5 text-gray-600 ">
+                    <div>
+                        <img src="./images/codelogo2.png" alt="abidkk" class="w-80 h-48  p-5">
+                    </div>
+                    <div class=" col-span-2 p-1 grid gap-2">
+
+                        <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
+                            <div class="w-60 flex items-center justify-center  font-bold">Qualification</div>
+                            <div class="p-1 text-center ">
+                                <p>Bachelor in Economics & Political-Science</p>
+                                <p>University of Sindh Jamshoro</p>
+                            </div>
+                        </div>
+
+
+                        <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
+                            <div class="w-60 flex items-center justify-center  font-bold">Experience</div>
+                            <div class="p-1 text-center ">
+                                <p>Instructor | Trainer | Management</p>
+                                <p>The Islamic Educator Mirpurkhas</p>
+                            </div>
+                        </div>
+
+
+                        <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
+                            <div class="w-60 flex items-center justify-center font-bold">Certifications</div>
+                            <div class="p-1 text-center "> <span>for certificates:</span> <span
+                                    class=" text-blue-500 px-2 hover:text-red-500 duration-500"><a href="">click
+                                        here</a></span> </div>
+                        </div>
 
 
 
+                    </div>
+                </div>
+                <p class=" text-center">I'm Abid Khokhar I'm a software developer & Trainer with 1 year of coding
+                    experience. The programming languages I have learned are Javascript, Typescript, and Python.
+                    Currently, I am learning the Next JS framework with React JS, and I'm also exploring Artificial
+                    Intelligence and Chatbot development. I also have 5 years of teaching experience in a private
+                    Institute. I have completed my graduation in Economics and Political Science and also achieved some
+                    International certifications from Universities like "Johns Hopkins University" and Big Tech
+                    companies like "Google".</p>
+            </div>
 
-                <!-- About Section -->
-                <div class=" mt-56 md:mt-40 lg:mt-32 p-2 py-10 my-10 md:px-20 min-h-80 " id="about">
-                    <h1 class="text-center text-2xl md:text-4xl font-bold pb-5"> <span>About</span> <span class="text-blue-800">Me</span></h1>
-                    <div class="grid grid-cols-1 md:grid-cols-3 justify-between py-5 text-gray-600 ">
+
+            <!-- certificates -->
+            <div class="bg-[#000066] py-10  my-12 " id="certificates">
+                <h1 class="text-center text-2xl md:text-4xl text-cyan-200 font-bold pb-10"> <span>Certifications</span>
+                </h1>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2  px-4 md:px-10 gap-5 justify-center py-10 text-gray-200 text-sm lg:text-lg">
+
+                    <!-- cert 1 -->
+                    <div class="flex gap-2 items-center">
+                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
                         <div>
-                            <img src="./images/codelogo2.png" alt="abidkk" class="w-80 h-48  p-5">
-                        </div>
-                        <div class=" col-span-2 p-1 grid gap-2">
-
-                            <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
-                               <div class="w-60 flex items-center justify-center  font-bold">Qualification</div>
-                               <div class="p-1 text-center "> <p>Bachelor in Economics & Political-Science</p>  <p>University of Sindh Jamshoro</p></div>
-                            </div>
-
-                            
-                            <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
-                                <div class="w-60 flex items-center justify-center  font-bold">Experience</div>
-                                <div class="p-1 text-center "> <p>Instructor | Trainer | Management</p>  <p>The Islamic Educator Mirpurkhas</p></div>
-                             </div>
-
-
-                             <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
-                                <div class="w-60 flex items-center justify-center font-bold">Certifications</div>
-                                <div class="p-1 text-center "> <span>for certificates:</span> <span class=" text-blue-500 px-2 hover:text-red-500 duration-500"><a href="">click here</a></span> </div>
-                             </div>
-              
-
-                         
+                            <h1 class="font-bold text-gray-200">Intro to Computers and Office Productivity Software</h1>
+                            <p class="italic">The Hong Kong University of Science and Technology</p>
                         </div>
                     </div>
-                    <p class=" text-center">I'm Abid Khokhar I'm a software developer & Trainer with 1 year of coding experience. The programming languages I have learned are Javascript, Typescript, and Python. Currently, I am learning the Next JS framework with React JS, and I'm also exploring Artificial Intelligence and Chatbot development. I also have 5 years of teaching experience in a private Institute. I have completed my graduation in Economics and Political Science and also achieved some International certifications from Universities like "Johns Hopkins University" and Big Tech companies like "Google".</p>
-                </div>
 
-
-                <!-- certificates -->
-                <div class="bg-[#000066] py-10  my-12 " id="certificates">
-                    <h1 class="text-center text-2xl md:text-4xl text-cyan-200 font-bold pb-10"> <span>Certifications</span></h1>
-                  
-                    <div class="grid grid-cols-1 md:grid-cols-2  px-4 md:px-10 gap-5 justify-center py-10 text-gray-200 text-sm lg:text-lg">
-                        
-                        <!-- cert 1 -->
-                        <div class="flex gap-2 items-center">
-                            <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                            <div>
-                                <h1 class="font-bold text-gray-200">Intro to Computers and Office Productivity Software</h1>
-                                <p class="italic">The Hong Kong University of Science and Technology</p>
-                            </div>
-                        </div> 
-
-                        <!-- cert 2 -->
-                        <div class="flex gap-2 items-center">
-                            <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                            <div>
-                                <h1 class="font-bold text-gray-200">Web Development
-                                    Html, CSS & Javascript for Web Developer</h1>
-                                <p class="italic">Johns Hopkins University (USA) Coursera</p>
-                            </div>
-                        </div> 
-
-                        <!-- cert 3 -->
-                        <div class="flex gap-2 items-center">
-                            <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                            <div>
-                                <h1 class="font-bold text-gray-200">Intro to Generative AI</h1>
-                                <p class="italic">Google cloud through coursera</p>
-                            </div>
-                        </div> 
-                        
-
-                        <!-- cert 4 -->
-                        <div class="flex gap-2 items-center">
-                            <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                            <div>
-                                <h1 class="font-bold text-gray-200">Ai for Everyone                                </h1>
-                                <p class="italic">Deeplearning.ai through coursera</p>
-                            </div>
-                        </div> 
-
-
-                        <!-- cert 5 -->
-                        <div class="flex gap-2 items-center">
-                            <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                            <div>
-                                <h1 class="font-bold text-gray-200">Digital Literacy
-                                    Certificate in Information Technology </h1>
-                                <p class="italic">Ignite by Virtual University of Pakistan</p>
-                            </div>
-                        </div> 
-
-
-
+                    <!-- cert 2 -->
+                    <div class="flex gap-2 items-center">
+                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
+                        <div>
+                            <h1 class="font-bold text-gray-200">Web Development
+                                Html, CSS & Javascript for Web Developer</h1>
+                            <p class="italic">Johns Hopkins University (USA) Coursera</p>
+                        </div>
                     </div>
+
+                    <!-- cert 3 -->
+                    <div class="flex gap-2 items-center">
+                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
+                        <div>
+                            <h1 class="font-bold text-gray-200">Intro to Generative AI</h1>
+                            <p class="italic">Google cloud through coursera</p>
+                        </div>
+                    </div>
+
+
+                    <!-- cert 4 -->
+                    <div class="flex gap-2 items-center">
+                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
+                        <div>
+                            <h1 class="font-bold text-gray-200">Ai for Everyone </h1>
+                            <p class="italic">Deeplearning.ai through coursera</p>
+                        </div>
+                    </div>
+
+
+                    <!-- cert 5 -->
+                    <div class="flex gap-2 items-center">
+                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
+                        <div>
+                            <h1 class="font-bold text-gray-200">Digital Literacy
+                                Certificate in Information Technology </h1>
+                            <p class="italic">Ignite by Virtual University of Pakistan</p>
+                        </div>
+                    </div>
+
+
 
                 </div>
 
-                <!-- Certificate slider -->
-                <div class="px-4 md:px-10 my-20">
+            </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 justify-center border bordergray-200 shadow-sm">
-                        <div class=" flex justify-center items-center hover:scale-110 duration-500"><img src="./images/certificates/hong-kong-uni.png" alt="cert" class="w-[90%] h-[95%]"></div>
-                        <div class=" flex justify-center items-center hover:scale-110 duration-500 "><img src="./images/certificates/googleai.png" alt="cert" class="w-[90%] h-[95%]"></div>
-                    
-                    </div>
+            <!-- Certificate slider -->
+            <div class="px-4 md:px-10 my-20">
 
-                    <div class="flex justify-center gap-2 py-10">
-                        <button class=""><img src="./images/leftarrow.png" alt="left" class="w-10 h-10"></button>
-                        <button class=""><img src="./images/rightarrow.png" alt="right " class="w-10 h-10"></button>
-
-                    </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-center border bordergray-200 shadow-sm">
+                    <div class=" flex justify-center items-center hover:scale-110 duration-500"><img
+                            src="./images/certificates/hong-kong-uni.png" alt="cert" class="w-[90%] h-[95%]"></div>
+                    <div class=" flex justify-center items-center hover:scale-110 duration-500 "><img
+                            src="./images/certificates/googleai.png" alt="cert" class="w-[90%] h-[95%]"></div>
 
                 </div>
 
-                <!-- Skills section -->
-                <div class="bg-[#000066] py-16  my-12  " id="skills">
-                    <h1 class="text-center text-2xl md:text-4xl text-cyan-200 font-bold pb-14"> <span>Skills</span></h1>
-                  
-                    <div class="px-2 md:px-20 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-5 justify-center text-center">
+                <div class="flex justify-center gap-2 py-10">
+                    <button class="" onclick="onPrev()"><img src="./images/leftarrow.png" alt="left"
+                            class="w-10 h-10"></button>
+                    <button class="" onclick="onNext()"><img src="./images/rightarrow.png" alt="right "
+                            class="w-10 h-10"></button>
 
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Javascript</p>
-                        </div>
+                </div>
 
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Typescript</p>
-                        </div>
+            </div>
 
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Python</p>
-                        </div>
+            <!-- Skills section -->
+            <div class="bg-[#000066] py-16  my-12  " id="skills">
+                <h1 class="text-center text-2xl md:text-4xl text-cyan-200 font-bold pb-14"> <span>Skills</span></h1>
 
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>React.Js</p>
-                        </div>
+                <div
+                    class="px-2 md:px-20 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-5 justify-center text-center">
 
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Next.Js</p>
-                        </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Javascript</p>
+                    </div>
 
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>tailwind CSS</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Bootsrap</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Next.Js</p>
-                        </div>                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Headless CMS</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Database</p>
-                        </div>                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Git & Github</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>HTML & CSS</p>
-                        </div>
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Canva Graphic Design</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Ms-Office</p>
-                        </div>                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Google Docs,sheet</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Google Forms</p>
-                        </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Typescript</p>
+                    </div>
 
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Numpy</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Pandas</p>
-                        </div>                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Data Anlysis</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Fast Api</p>
-                        </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Python</p>
+                    </div>
 
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Wordpress</p>
-                        </div>                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Web development</p>
-                        </div>
-                        
-                        <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>Notion </p>
-                        </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>React.Js</p>
+                    </div>
 
-                         <!-- skill-1 -->
-                        <div class="flex gap-2 items-center text-white text-xl">
-                            <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                            <p>ChatGpt Prompt Design</p>
-                        </div>
 
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Next.Js</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>tailwind CSS</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Bootsrap</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Next.Js</p>
+                    </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Headless CMS</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Database</p>
+                    </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Git & Github</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>HTML & CSS</p>
+                    </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Canva Graphic Design</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Ms-Office</p>
+                    </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Google Docs,sheet</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Google Forms</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Numpy</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Pandas</p>
+                    </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Data Anlysis</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Fast Api</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Wordpress</p>
+                    </div>
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Web development</p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>Notion </p>
+                    </div>
+
+                    <!-- skill-1 -->
+                    <div class="flex gap-2 items-center text-white text-xl">
+                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
+                        <p>ChatGpt Prompt Design</p>
                     </div>
 
                 </div>
 
+            </div>
 
-                <!-- courses we offer -->
 
-                <div class="px-4 md:px-20 py-5 min-h-screen " id="courses">
-                    <h1 class="text-center text-4xl font-bold"> <span>Courses</span> <span class="text-blue-800">We Offer</span> </h1>
+            <!-- courses we offer -->
 
-                    <div class=" flex gap-10 flex-wrap justify-center  pt-10 justify-center">
+            <div class="px-4 md:px-20 py-5 min-h-screen " id="courses">
+                <h1 class="text-center text-4xl font-bold"> <span>Courses</span> <span class="text-blue-800">We
+                        Offer</span> </h1>
+
+                <div class=" flex gap-10 flex-wrap justify-center  pt-10 justify-center">
 
                     <!-- online course -->
                     <div class="md:w-[500px]">
@@ -336,7 +404,9 @@
                             <img src="./images/onlineclass2.png" alt="" class="rounded-md">
                             <p class="p-2 text-center">Online courses will be conducted via Zoom/Google-Meet</p>
                             <!-- <button class="bg-blue-700 px-4 py-2 w-[90%] mx-auto">See More</button> -->
-                            <a href="./pages/courses/online/" target="_blank"><button class="text-center rounded-md  w-full bg-blue-700 hover:bg-blue-800 duration-500 text-white p-2">Apply Now</button></a>
+                            <a href="./pages/courses/online/" target="_blank"><button
+                                    class="text-center rounded-md  w-full bg-blue-700 hover:bg-blue-800 duration-500 text-white p-2">Apply
+                                    Now</button></a>
                         </div>
                     </div>
 
@@ -347,76 +417,102 @@
                             <img src="./images/onsiteclass.jpg" alt="" class="rounded-md">
                             <p class="p-2 text-center">Onsite classess will be held on different places</p>
                             <!-- <button class="bg-blue-700 px-4 py-2 w-[90%] mx-auto">See More</button> -->
-                           <a href="./pages/courses/onsite/index.html" target="_blank"> <button class="text-center rounded-md w-full bg-blue-700 hover:bg-blue-800 duration-500 text-white p-2">Apply Now</button></a>
+                            <a href="./pages/courses/onsite/index.html" target="_blank"> <button
+                                    class="text-center rounded-md w-full bg-blue-700 hover:bg-blue-800 duration-500 text-white p-2">Apply
+                                    Now</button></a>
                         </div>
                     </div>
-                    </div>
+                </div>
+            </div>
+
+            <!-- arrow up -->
+
+            <div class="py-10 px-10 flex  justify-end">
+                <a href="#header"><img src="./images/arrowup.png" alt="up" class="w-10 h-10  "></a>
+            </div>
+
+            <!-- footer -->
+            <div id="footer"
+                class="p-2 md:p-10 bg-[#000066] text-gray-200 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
+
+                <!-- logo name -->
+                <div class="p-2 ">
+                    <h1 class="font-bold font-mono text-2xl">AK</h1>
+                    <h1 class="font-bold text-4xl">Abid Khokhar</h1>
+                    <img src="./images/codelogo2.png" alt="logo" class="w-40 h-24  mt-5">
                 </div>
 
-                <!-- arrow up -->
-
-                <div class="py-10 px-10 flex  justify-end">
-                    <a href="#header"><img src="./images/arrowup.png" alt="up" class="w-10 h-10  "></a>
+                <!-- address -->
+                <div class=" p-2  ">
+                    <h1 class="font-bold font-mono text-2xl">Address</h1>
+                    <ul>
+                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/mail.png"
+                                alt="location" class="w-6 h-6  ">
+                            <p>+92 312-2626268</p>
+                        </li>
+                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/phone3.png"
+                                alt="location" class="w-6 h-6 ">
+                            <p>dev.abidkk@gmail.com</p>
+                        </li>
+                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/location2.png"
+                                alt="location" class="w-6 h-6 ">
+                            <p>Karachi, Pakistan</p>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- footer -->
-                <div id="footer" class="p-2 md:p-10 bg-[#000066] text-gray-200 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
 
-                    <!-- logo name -->
-                    <div class="p-2 ">
-                        <h1 class="font-bold font-mono text-2xl">AK</h1>
-                        <h1 class="font-bold text-4xl">Abid Khokhar</h1>
-                        <img src="./images/codelogo2.png" alt="logo" class="w-40 h-24  mt-5">
-                    </div>
-
-                    <!-- address -->
-                    <div class=" p-2  ">
-                        <h1 class="font-bold font-mono text-2xl">Address</h1>
-                        <ul>
-                            <li class="flex gap-2 items-center text-gray-100 my-4">  <img src="./images/mail.png" alt="location" class="w-6 h-6  "> <p>+92 312-2626268</p> </li>
-                            <li class="flex gap-2 items-center text-gray-100 my-4">  <img src="./images/phone3.png" alt="location" class="w-6 h-6 "> <p>dev.abidkk@gmail.com</p> </li>
-                            <li class="flex gap-2 items-center text-gray-100 my-4">  <img src="./images/location2.png" alt="location" class="w-6 h-6 "> <p>Karachi, Pakistan</p> </li>
-                        </ul>
-                    </div>
-
-                
-                    <!-- links -->
-                    <div class=" p-2 ">
-                        <h1 class="font-bold font-mono text-2xl">Important Links</h1>
-                        <ul>
-                            <li class="flex gap-2 items-center text-gray-100 my-4">  <img src="./images/globe3.png" alt="location" class="w-6 h-6 "> <p>Linkedin</p> </li>
-                            <li class="flex gap-2 items-center text-gray-100 my-4">  <img src="./images/globe3.png" alt="location" class="w-6 h-6 "> <p>Github</p> </li>
-                            <li class="flex gap-2 items-center text-gray-100 my-4">  <img src="./images/globe3.png" alt="location" class="w-6 h-6 "> <p>Upwork</p> </li>
-                            <li class="flex gap-2 items-center text-gray-100 my-4">  <img src="./images/globe3.png" alt="location" class="w-6 h-6 "> <p>Fiverr</p> </li>
-                        </ul>
-                    </div>
-
-                    <!-- forms -->
-                    <div class="p-2">
-                        <form action="">
-                            <div class="flex gap-2 justify-between "> <input type="text" placeholder="enter your name" id="" class="p-2 px-5 mb-2 text-black rounded-sm"> <span> <img src="./images/mailicon12.png" alt="mail" class="w-14 h-10 "></span></div>
-                            <textarea name="" id=""  rows="5" class="p-2  text-blue-800 rounded-sm w-20 md:w-80" placeholder="type your message"></textarea>
-                            <button class="bg-blue-900  px-5 border border-gray-500  hover:rounded-tr-xl hover:rounded-bl-xl duration-500">send</button>
-                        </form>
-                    </div>
-
+                <!-- links -->
+                <div class=" p-2 ">
+                    <h1 class="font-bold font-mono text-2xl">Important Links</h1>
+                    <ul>
+                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
+                                alt="location" class="w-6 h-6 ">
+                            <p>Linkedin</p>
+                        </li>
+                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
+                                alt="location" class="w-6 h-6 ">
+                            <p>Github</p>
+                        </li>
+                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
+                                alt="location" class="w-6 h-6 ">
+                            <p>Upwork</p>
+                        </li>
+                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
+                                alt="location" class="w-6 h-6 ">
+                            <p>Fiverr</p>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- footer2 -->
-                <div class="bg-blue-900 py-1 px-10 text-cyan-200 flex gap-4 justify-between">
-                    <p>Developed by : <b>Abid Khokahr</b></p>
-                    <p>&copy; 2024 Abidkk. All rights reserved.</p>
+                <!-- forms -->
+                <div class="p-2">
+                    <form action="">
+                        <div class="flex gap-2 justify-between "> <input type="text" placeholder="enter your name" id=""
+                                class="p-2 px-5 mb-2 text-black rounded-sm"> <span> <img src="./images/mailicon12.png"
+                                    alt="mail" class="w-14 h-10 "></span></div>
+                        <textarea name="" id="" rows="5" class="p-2  text-blue-800 rounded-sm w-20 md:w-80"
+                            placeholder="type your message"></textarea>
+                        <button
+                            class="bg-blue-900  px-5 border border-gray-500  hover:rounded-tr-xl hover:rounded-bl-xl duration-500">send</button>
+                    </form>
                 </div>
 
             </div>
+
+            <!-- footer2 -->
+            <div class="bg-blue-900 py-1 px-10 text-cyan-200 flex gap-4 justify-between">
+                <p>Developed by : <b>Abid Khokahr</b></p>
+                <p>&copy; 2024 Abidkk. All rights reserved.</p>
+            </div>
+
+        </div>
         </div>
 
 
 
     </main>
-    
+    <script src="./script.js"></script>
 </body>
+
 </html>
-
-
-

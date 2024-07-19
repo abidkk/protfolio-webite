@@ -2,523 +2,303 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>AK Abidkk</title>
-    <style>
-
-
-#headline {
-  animation: slidein 20s ease-in infinite alternate;
-  /* Animation property set to transform (position) */
-}
-
-@keyframes slidein {
-  from { /* Using 'from' instead of 0% */
-    transform: translateX(100%);
-  }
-  to { /* Using 'to' instead of 100% */
-    transform: translateX(-100%);
-  }
-}
-
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Abid Khokhar</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-100">
-    <main>
-
-        <div>
-            <img src="./images/hero-bg.png" alt="background"
-                class="w-screen absolute h-[930px] sm:h-[700px] md:h-[900px] lg:h-[700px]">
-
-            <div class="relative">
-                <!-- header -->
-                <header id="header"
-                    class="bg-[#000066] text-gray-200 p-2 flex flex-wrap gap-2  justify-between md:px-10 border-b border-blue-700 shadow-md">
-
-
-                    <h1 class="text-2xl font-bold font-mono">Abidkk</h1>
-                    <ul class="flex flex-wrap gap-5 text-lg text-center  ">
-                        <a href="/" class="hover:text-cyan-300 duration-500">
-                            <li>Home</li>
-                        </a>
-                        <a href="#about" class="hover:text-cyan-300 duration-500">
-                            <li>About</li>
-                        </a>
-                        <a href="#skills" class="hover:text-cyan-300 duration-500">
-                            <!-- <li>Skills</li> -->
-                        </a>
-                        <a href="#courses" class="hover:text-cyan-300 duration-500">
-                            <li>Courses</li>
-                        </a>
-                        <a href="#projects" class="hover:text-cyan-300 duration-500">
-                            <li>Projects</li>
-                        </a>
-                    </ul>
-                    <div class="flex gap-2">
-                        <p class="hover:scale-105 duration-500"><a href="https://www.linkedin.com/in/abidkk/"
-                                target="_blank"><img src="./images/linkedin01.png" alt="linkedin"
-                                    class="w-8 h-8 bg-white rounded-full border border-white"></a></p>
-                        <p class="hover:scale-105 duration-500"><a href="https://github.com/abidkk" target="_blank"><img
-                                    src="./images/github01.png" alt="github"
-                                    class="w-8 h-8 bg-white rounded-full border border-white"></a></p>
-                    </div>
-                </header>
-
-                <!-- hero -->
-        <!-- <div>
-            <p class="pt-5">
-               <span class=" mx-10 p-2 border border-cyan-300 text-cyan-400"> click Here for Javascript Bootcamp Registration</span>
-            </p>
-        </div> -->
-<!-- 
-        <div class="text-white  p-2" id="headline">
-            <span  class="underline hover:text-cyan-500 duration-500"><a href="./pages/asadaskills/index.html">Javascript Bootcamp Registration</a></span>
-
-        </div> -->
-                <div class=" grid grid-cols-1 lg:grid-cols-2  text-white p-4 md:px-10">
-
-                    <!-- content -->
-                    <div class=" h-[250px] md:h-[300px] lg:h-[600px] order-2 lg:order-1 flex items-center lg:pb-40">
-
-                        <div class=" ">
-
-                            <h1 class="text-4xl md:text-6xl font-bold">Abid Khokhar</h1>
-                            <h2 class="text-2xl md:text-6xl lg:text-5xl text-cyan-400">Frontend Web Developer</h2>
-                            <p class="py-2 text-sm md:text-xl"> Javascript | Typescript | Python with Numpy & Pandas|
-                                React | Next | Artificial Intelligence Chatbot Developer.</p>
-                            <button
-                                class="mt-5 bg-blue-900 px-6 py-2 text-white hover:rounded-tl-xl hover:rounded-br-xl duration-500">contact
-                                me</button>
-
-                                    <a href="./pages/asadaskills/index.html">
-                                        <button
-                                        class="mt-5 bg-red-700 px-6 py-2 text-white hover:rounded-tl-xl hover:rounded-br-xl duration-500">Bootcamp</button>
-                               
-                                    </a>
-                            </div>
-                    </div>
-                    <!-- main logo -->
-                    <div class=" h-[300px] md:h-[400px] lg:h-[600px] order-1 lg:order-2">
-                        <div class="flex justify-center items-center ">
-                            <img src="./images/development-4536630_1920.png" alt="globe logo"
-                                class="  rounded-md p-4 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]">
-                        </div>
-                    </div>
-                </div>
-
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Abid Khokhar</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-
-            <!-- About Section -->
-            <div class=" mt-56 md:mt-40 lg:mt-32 p-2 py-10 my-10 md:px-20 min-h-80 " id="about">
-                <h1 class="text-center text-2xl md:text-4xl font-bold pb-5"> <span>About</span> <span
-                        class="text-blue-800">Me</span></h1>
-                <div class="grid grid-cols-1 md:grid-cols-3 justify-between py-5 text-gray-600 ">
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">
+                        < Software Developer />
+                    </h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Frontend | Backend | Javascript | Typescript | React | Next | Python |
+                        Numpy | Pandas | Wordpress | Bootstrap & Tailwind | Git & Github</p>
+                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-dark text-white" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-primary mt-0">Academic History</h2>
+                    <hr class="divider divider-light" />
                     <div>
-                        <img src="./images/codelogo2.png" alt="abidkk" class="w-80 h-48  p-5">
+                        <p class="m-0 text-white-75"><strong>Bachelor of Computer Science - 2024 - 2028</strong></p>
+                        <p>National University of Modern Languages (NUML) Karachi</p>
                     </div>
-                    <div class=" col-span-2 p-1 grid gap-2">
-
-                        <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
-                            <div class="w-60 flex items-center justify-center  font-bold">Qualification</div>
-                            <div class="p-1 text-center ">
-                                <p>Bachelor in Economics & Political-Science</p>
-                                <p>University of Sindh Jamshoro</p>
-                            </div>
-                        </div>
-
-
-                        <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
-                            <div class="w-60 flex items-center justify-center  font-bold">Experience</div>
-                            <div class="p-1 text-center ">
-                                <p>Instructor | Trainer | Management</p>
-                                <p>The Islamic Educator Mirpurkhas</p>
-                            </div>
-                        </div>
-
-
-                        <div class="border-b border-gray-300 hover:shadow-md duration-500 flex flex-wrap">
-                            <div class="w-60 flex items-center justify-center font-bold">Certifications</div>
-                            <div class="p-1 text-center "> <span>for certificates:</span> <span
-                                    class=" text-blue-500 px-2 hover:text-red-500 duration-500"><a href="">click
-                                        here</a></span> </div>
-                        </div>
-
-
-
+                    <div>
+                        <p class="m-0 text-white-75"><strong>Bachelor of Arts - 2019 - 2022</strong></p>
+                        <p>University of Sind Jamshoro</p>
                     </div>
-                </div>
-                <p class=" text-center">I'm Abid Khokhar I'm a software developer & Trainer with 1 year of coding
-                    experience. The programming languages I have learned are Javascript, Typescript, and Python.
-                    Currently, I am learning the Next JS framework with React JS, and I'm also exploring Artificial
-                    Intelligence and Chatbot development. I also have 5 years of teaching experience in a private
-                    Institute. I have completed my graduation in Economics and Political Science and also achieved some
-                    International certifications from Universities like "Johns Hopkins University" and Big Tech
-                    companies like "Google".</p>
-            </div>
-
-
-            <!-- certificates -->
-            <div class="bg-[#000066] py-10  my-12 " id="certificates">
-                <h1 class="text-center text-2xl md:text-4xl text-cyan-200 font-bold pb-10"> <span>Certifications</span>
-                </h1>
-
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2  px-4 md:px-10 gap-5 justify-center py-10 text-gray-200 text-sm lg:text-lg">
-
-                    <!-- cert 1 -->
-                    <div class="flex gap-2 items-center">
-                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                        <div>
-                            <h1 class="font-bold text-gray-200">Intro to Computers and Office Productivity Software</h1>
-                            <p class="italic">The Hong Kong University of Science and Technology</p>
-                        </div>
-                    </div>
-
-                    <!-- cert 2 -->
-                    <div class="flex gap-2 items-center">
-                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                        <div>
-                            <h1 class="font-bold text-gray-200">Web Development
-                                Html, CSS & Javascript for Web Developer</h1>
-                            <p class="italic">Johns Hopkins University (USA) Coursera</p>
-                        </div>
-                    </div>
-
-                    <!-- cert 3 -->
-                    <div class="flex gap-2 items-center">
-                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                        <div>
-                            <h1 class="font-bold text-gray-200">Intro to Generative AI</h1>
-                            <p class="italic">Google cloud through coursera</p>
-                        </div>
-                    </div>
-
-
-                    <!-- cert 4 -->
-                    <div class="flex gap-2 items-center">
-                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                        <div>
-                            <h1 class="font-bold text-gray-200">Ai for Everyone </h1>
-                            <p class="italic">Deeplearning.ai through coursera</p>
-                        </div>
-                    </div>
-
-
-                    <!-- cert 5 -->
-                    <div class="flex gap-2 items-center">
-                        <div><img src="./images/tick2.png" alt="tick" class="w-14 h-14"></div>
-                        <div>
-                            <h1 class="font-bold text-gray-200">Digital Literacy
-                                Certificate in Information Technology </h1>
-                            <p class="italic">Ignite by Virtual University of Pakistan</p>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-            <!-- Certificate slider -->
-            <div class="px-4 md:px-10 my-20">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 justify-center border bordergray-200 shadow-sm">
-                    <div class=" flex justify-center items-center hover:scale-110 duration-500"><img
-                            src="./images/certificates/hong-kong-uni.png" alt="cert" class="w-[90%] h-[95%]"></div>
-                    <div class=" flex justify-center items-center hover:scale-110 duration-500 "><img
-                            src="./images/certificates/googleai.png" alt="cert" class="w-[90%] h-[95%]"></div>
-
-                </div>
-
-                <div class="flex justify-center gap-2 py-10">
-                    <button class="" onclick="onPrev()"><img src="./images/leftarrow.png" alt="left"
-                            class="w-10 h-10"></button>
-                    <button class="" onclick="onNext()"><img src="./images/rightarrow.png" alt="right "
-                            class="w-10 h-10"></button>
-
-                </div>
-
-            </div>
-
-            <!-- Skills section -->
-            <div class="bg-[#000066] py-16  my-12  " id="skills">
-                <h1 class="text-center text-2xl md:text-4xl text-cyan-200 font-bold pb-14"> <span>Skills</span></h1>
-
-                <div
-                    class="px-2 md:px-20 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-5 justify-center text-center">
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Javascript</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Typescript</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Python</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>React.Js</p>
-                    </div>
-
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Next.Js</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>tailwind CSS</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Bootsrap</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Next.Js</p>
-                    </div>
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Headless CMS</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Database</p>
-                    </div>
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Git & Github</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>HTML & CSS</p>
-                    </div>
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Canva Graphic Design</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Ms-Office</p>
-                    </div>
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Google Docs,sheet</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Google Forms</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Numpy</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Pandas</p>
-                    </div>
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Data Anlysis</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Fast Api</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Wordpress</p>
-                    </div>
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Web development</p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>Notion </p>
-                    </div>
-
-                    <!-- skill-1 -->
-                    <div class="flex gap-2 items-center text-white text-xl">
-                        <img src="./images/star.png" alt="skill" class="w-6 h-6">
-                        <p>ChatGpt Prompt Design</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- courses we offer -->
-
-            <div class="px-4 md:px-20 py-5 min-h-screen " id="courses">
-                <h1 class="text-center text-4xl font-bold"> <span>Courses</span> <span class="text-blue-800">We
-                        Offer</span> </h1>
-
-                <div class=" flex gap-10 flex-wrap justify-center  pt-10 justify-center">
-
-                    <!-- online course -->
-                    <div class="md:w-[500px]">
-                        <h1 class="text-center text-2xl font-bold pb-2">Online Courses</h1>
-                        <div class="bg-gray-200 hover:bg-gray-300 duration-500 shadow-md  rounded-md p-2">
-                            <img src="./images/onlineclass2.png" alt="" class="rounded-md">
-                            <p class="p-2 text-center">Online courses will be conducted via Zoom/Google-Meet</p>
-                            <!-- <button class="bg-blue-700 px-4 py-2 w-[90%] mx-auto">See More</button> -->
-                            <a href="./pages/asadaskills/index.html" target="_blank"><button
-                                    class="text-center rounded-md  w-full bg-blue-700 hover:bg-blue-800 duration-500 text-white p-2">Apply
-                                    Now</button></a>
-                        </div>
-                    </div>
-
-                    <!-- Onsite course -->
-                    <div class="md:w-[500px] ">
-                        <h1 class="text-center text-2xl font-bold pb-2">Onsite Courses</h1>
-                        <div class="bg-gray-200  shadow-md hover:bg-gray-300 duration-500 rounded-md p-2">
-                            <img src="./images/onsiteclass.jpg" alt="" class="rounded-md">
-                            <p class="p-2 text-center">Onsite classess will be held on different places</p>
-                            <!-- <button class="bg-blue-700 px-4 py-2 w-[90%] mx-auto">See More</button> -->
-                            <a href="./pages/asadaskills/index.html" target="_blank"> <button
-                                    class="text-center rounded-md w-full bg-blue-700 hover:bg-blue-800 duration-500 text-white p-2">Apply
-                                    Now</button></a>
-                        </div>
+                    <div>
+                        <p class="m-0 text-white-75"><strong>FSC Pre-Engineering - 2016 - 2018</strong></p>
+                        <p>Govt S.A.L Science College Mirpurkhas</p>
                     </div>
                 </div>
             </div>
 
-            <!-- arrow up -->
+            <div class="row gx-4 gx-lg-5 justify-content-center py-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-primary mt-0">Work History</h2>
+                    <hr class="divider divider-light" />
+                    <div>
+                        <p class="m-0 text-white-75"><strong>Teacher & Instructor - 2018 -2023</strong></p>
+                        <p>The Islamic Academy Mirpurkhas</p>
+                    </div>
 
-            <div class="py-10 px-10 flex  justify-end">
-                <a href="#header"><img src="./images/arrowup.png" alt="up" class="w-10 h-10  "></a>
+                    <div>
+                        <p class="m-0 text-white-75"><strong>Frontend Developer Intern Apri-2024 to June-2024</strong>
+                        </p>
+                        <p>EchoReaach Digital Solution Karachi</p>
+                    </div>
+
+                    <div>
+                        <p class="m-0 text-white-75"><strong>Frontend Developer July-2024 to Still</strong></p>
+                        <p>Vrexx Solution Karachi</p>
+                    </div>
+
+                </div>
             </div>
-
-            <!-- footer -->
-            <div id="footer"
-                class="p-2 md:p-10 bg-[#000066] text-gray-200 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
-
-                <!-- logo name -->
-                <div class="p-2 ">
-                    <h1 class="font-bold font-mono text-2xl">AK</h1>
-                    <h1 class="font-bold text-4xl">Abid Khokhar</h1>
-                    <img src="./images/codelogo2.png" alt="logo" class="w-40 h-24  mt-5">
-                </div>
-
-                <!-- address -->
-                <div class=" p-2  ">
-                    <h1 class="font-bold font-mono text-2xl">Address</h1>
-                    <ul>
-                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/mail.png"
-                                alt="location" class="w-6 h-6  ">
-                            <p>+92 312-2626268</p>
-                        </li>
-                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/phone3.png"
-                                alt="location" class="w-6 h-6 ">
-                            <p>dev.abidkk@gmail.com</p>
-                        </li>
-                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/location2.png"
-                                alt="location" class="w-6 h-6 ">
-                            <p>Karachi, Pakistan</p>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <!-- links -->
-                <div class=" p-2 ">
-                    <h1 class="font-bold font-mono text-2xl">Important Links</h1>
-                    <ul>
-                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
-                                alt="location" class="w-6 h-6 ">
-                            <p>Linkedin</p>
-                        </li>
-                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
-                                alt="location" class="w-6 h-6 ">
-                            <p>Github</p>
-                        </li>
-                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
-                                alt="location" class="w-6 h-6 ">
-                            <p>Upwork</p>
-                        </li>
-                        <li class="flex gap-2 items-center text-gray-100 my-4"> <img src="./images/globe3.png"
-                                alt="location" class="w-6 h-6 ">
-                            <p>Fiverr</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- forms -->
-                <div class="p-2">
-                    <form action="">
-                        <div class="flex gap-2 justify-between "> <input type="text" placeholder="enter your name" id=""
-                                class="p-2 px-5 mb-2 text-black rounded-sm"> <span> <img src="./images/mailicon12.png"
-                                    alt="mail" class="w-14 h-10 "></span></div>
-                        <textarea name="" id="" rows="5" class="p-2  text-blue-800 rounded-sm w-20 md:w-80"
-                            placeholder="type your message"></textarea>
-                        <button
-                            class="bg-blue-900  px-5 border border-gray-500  hover:rounded-tr-xl hover:rounded-bl-xl duration-500">send</button>
-                    </form>
-                </div>
-
-            </div>
-
-            <!-- footer2 -->
-            <div class="bg-blue-900 py-1 px-10 text-cyan-200 flex gap-4 justify-between">
-                <p>Developed by : <b>Abid Khokahr</b></p>
-                <p>&copy; 2024 Abidkk. All rights reserved.</p>
-            </div>
-
         </div>
         </div>
+    </section>
+
+    <!-- Portfolio-->
+    <div id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col text-center py-4">
+                    <h1>Certificates</h1>
+                </div>
+            </div>
+            <div class="row gy-4 px-lg-5 me-0">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/img/certificates/web-dev.jpeg"
+                        title="HTML, CSS, and Javascript for Web Developers">
+                        <img class="img-fluid" src="/assets/img/certificates/web-dev.jpeg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Johns Hopkins University</div>
+                            <div class="project-name">HTML, CSS, and Javascript for Web Developers</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/img/certificates/intro-gen-google.jpeg"
+                        title="Introduction to Generative AI">
+                        <img class="img-fluid" src="/assets/img/certificates/intro-gen-google.jpeg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Google Cloud</div>
+                            <div class="project-name">Introduction to Generative AI</div>
+                        </div>
+                    </a>
+                </div>
 
 
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/img/certificates/meta-intro-frontend.jpeg"
+                        title="Introduction to Front-End Development">
+                        <img class="img-fluid" src="/assets/img/certificates/meta-intro-frontend.jpeg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Meta</div>
+                            <div class="project-name">Introduction to Front-End Development</div>
+                        </div>
+                    </a>
+                </div>
 
-    </main>
-    <script src="./script.js"></script>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/img/certificates/intro-comp.jpeg"
+                        title="Introduction to Computers and Office Productivity Software">
+                        <img class="img-fluid" src="/assets/img/certificates/intro-comp.jpeg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">The Hong Kong University of Science and
+                                Technology</div>
+                            <div class="project-name">Introduction to Computers and Office Productivity Software</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/img/certificates/AI-for_Everyone-DL.jpeg"
+                        title="AI For Everyone">
+                        <img class="img-fluid" src="/assets/img/certificates/AI-for_Everyone-DL.jpeg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">DeepLearning.AI</div>
+                            <div class="project-name">AI For Everyone</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/img/certificates/gen-AI-dl.jpeg"
+                        title="Generative AI for Everyone">
+                        <img class="img-fluid" src="/assets/img/certificates/gen-AI-dl.jpeg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">DeepLearning.AI</div>
+                            <div class="project-name">Generative AI for Everyone</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Services-->
+    <section class="page-section py-5 mt-5 bg-dark text-white-75" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0 text-primary">Our Services</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2 ">Teacher | Instructor</h3>
+                        <p class="text-muted mb-0">Empowering educators with the latest tools and resources.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Frontend Developemt</h3>
+                        <p class="text-muted mb-0">Crafting visually stunning and highly functional interfaces.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Backend Developemt</h3>
+                        <p class="text-muted mb-0">Building robust and scalable server-side solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Our Community Projects</h3>
+                        <p class="text-muted mb-0">
+                            Visit our community project <a style="text-decoration: none;"
+                                href="https://synapseskills.site/" target="_blank">www.synapseskills.site</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to action-->
+    <section class="page-section mb-5 bg-dark text-white py-5 h-50 d-flex justify-content-center align-items-center">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mb-4 text-primary">Download Resume</h2>
+            <a class="btn btn-light btn-lg" download="" href="./assets/Ali Abid (1).pdf">Download</a>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section contant-form-sec" id="contact">
+        <div class="container px-lg-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Let's Get In Touch!</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will
+                        get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-6 h-auto p-0 m-0">
+                    <div class="embed-container">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe3HXo97KDcnEPTpXq-x-wOHRnPxHGUXvkSKx6fDjh75FLJPg/viewform?embedded=true"
+                            frameborder="0" marginheight="0" marginwidth="0">Loading…
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <div class="row gx-4 gx-lg-5 justify-content-center pt-5 m-0 py-2">
+        <div class="col-lg-4 text-center ">
+            <i class="bi-phone fs-2 mb-3 text-muted"></i>
+            <div><a href="tel:+93122646268">+92 3122646268</a></div>
+        </div>
+  
+    </div>
+    <div class="row m-0 p-0">
+        <div class="col d-flex justify-content-center gap-2 pb-5">
+            <a href="https://www.linkedin.com/in/abidkk/" target="_blank"><div class="iccon1"><span><img src="./assets/img/icons/linkedin.png" class="icons" alt="linkedin" width="30" height="30" ></span></div></a>
+            <div class="iccon"><span><img src="./assets/img/icons/x.png" class="icons" alt="linkedin" width="30" height="30" ></span></div>
+            <div class="iccon"><span><img src="./assets/img/icons/insta.png" class="icons" alt="linkedin" width="30" height="30" ></span></div>
+            <div class="iccon"><span><img src="./assets/img/icons/facebook.png" class="icons" alt="linkedin" width="30" height="30" ></span></div>
+            <!-- <div class="iccon"><span><img src="./assets/img/icons/youtube.png" class="icons" alt="linkedin" width="35" height="35" ></span></div> -->
+       
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2024 -www.abidkk.site</div>
+        </div>
+
+        <div class="container px-4 px-lg-5 pt-2">
+            <div class="small text-center text-muted">Developed by <a href="https://themewagon.com/">Abid Khokhar</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>

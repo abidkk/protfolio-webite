@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .pomodoro-container {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pomodoro-container h1 {
+      font-size: 30px;
+    }
+
+    #timer {
+      font-size: 48px;
+      margin-bottom: 20px;
+      border: 2px solid rgb(238, 238, 238);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #28a745;
+      color: white;
+    }
+
+    button#reset-btn {
+      background-color: #dc3545;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="pomodoro-container">
+    <h1>Pomodoro Timer</h1>
+
+    <div id="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+    <div style="padding: 20px 0px;">
+      <img src="./public/pomodorologo.png" alt="logo" width="200" height="200">
+    </div>
+    <button id="start-btn">Start</button>
+    <button id="reset-btn">Reset</button>
+    <div style="padding: 20px 0px; color: rgb(180, 179, 179);">
+      <span>Developed by: Abid Khokhar</span>
+    </div>
+  </div>
+  <audio id="alarm-sound" src="./public/alarm.mp3"></audio>
+  <script>
+    let timer;
+    let isRunning = false;
+
+    const startBtn = document.getElementById('start-btn');
+    const resetBtn = document.getElementById('reset-btn');
+    const minutesDisplay = document.getElementById('minutes');
+    const secondsDisplay = document.getElementById('seconds');
+    const alarmSound = document.getElementById('alarm-sound');
+
+    const initialTime = 1 * 60// Set to 1 minute for testing, change to 25 * 60 for 25 minutes
+    let remainingTime = initialTime;
+
+    function updateDisplay() {
+      let minutes = Math.floor(remainingTime / 60);
+      let seconds = remainingTime % 60;
+
+      minutesDisplay.textContent = minutes.toString().padStart(2, '0');
+      secondsDisplay.textContent = seconds.toString().padStart(2, '0');
+    }
+
+    function startTimer() {
+      if (!isRunning) {
+        isRunning = true;
+
+        // Ensure the audio is allowed to play by interacting with it first
+        alarmSound.play().then(() => {
+          alarmSound.pause();
+          alarmSound.currentTime = 0; // Reset the audio position
+        });
+
+        timer = setInterval(() => {
+          remainingTime--;
+          updateDisplay();
+
+          if (remainingTime <= 0) {
+            clearInterval(timer);
+            alarmSound.play(); // Play the alarm sound when the timer ends
+            isRunning = false;
+          }
+        }, 1000);
+      }
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      remainingTime = initialTime;
+      updateDisplay();
+      isRunning = false;
+
+      // Ensure the audio is allowed to play by interacting with it first
+      alarmSound.pause().then(() => {
+        alarmSound.play();
+        alarmSound.currentTime = 0; // Reset the audio position
+      });
+    }
+
+    // Event listeners for the buttons
+    startBtn.addEventListener('click', startTimer);
+    resetBtn.addEventListener('click', resetTimer);
+    // Initial display update
+    updateDisplay();
+  </script>
+</body>
+
+</html>

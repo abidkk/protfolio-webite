@@ -11055,3 +11055,11 @@ a{
   scale: 1.2;
   transition: all ease-in-out 0.5s;
 }
+
+.ds{
+  text-shadow: black 5px 5px 5px;
+}
+
+.ph{
+  font-size: 14px;
+}
